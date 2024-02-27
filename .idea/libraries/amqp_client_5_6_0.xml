@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="amqp-client-5.6.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../systemes repartis LAB1$$$/Jar Libs for java RabbitMq/amqp-client-5.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../systemes repartis LAB1$$$/Jar Libs for java RabbitMq/rabbitmq-jms-1.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../systemes repartis LAB1$$$/Jar Libs for java RabbitMq/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../systemes repartis LAB1$$$/Jar Libs for java RabbitMq/slf4j-api-1.8.0-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../systemes repartis LAB1$$$/Jar Libs for java RabbitMq/slf4j-nop-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../systemes repartis LAB1$$$/Jar Libs for java RabbitMq/slf4j-nop-1.8.0-beta0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

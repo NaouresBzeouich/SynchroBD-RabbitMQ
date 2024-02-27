@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ae1788-48fc-49cd-9f0a-0493b8bff9ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JdbcPreparedTesting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JdbcRetrieve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BO1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BO2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BOSend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Receive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/send.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Synchronisation-des-bases-de-donnees-avec-RabbitMQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Synchronisation-des-bases-de-donnees-avec-RabbitMQ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JdbcPreparedTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JdbcInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JdbcRetrieve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JdbcRetrieve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -38,10 +45,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/R I B/Downloads/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar",
+    "last_opened_file_path": "C:/Users/R I B/Downloads/projet1/projet1",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
