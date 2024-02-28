@@ -47,4 +47,10 @@ public class data {
         return d;
     }
 
+    public static Object[][] dataToTable(Vector<data> d){
+        Object[][] D = new Object[8][d.size()] ;
+        return D;
+
+    }
+
 }

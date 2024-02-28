@@ -35,4 +35,33 @@ public class JdbcInsert {
             lgr.log(Level.SEVERE, ex.getMessage(), ex);
         }
     }
+    public JdbcInsert(data message,String DB) {
+
+        String url = "jdbc:mysql://localhost:3306/product_sales_"+DB;
+        String user = "root";
+        String password = "98821616Oo";
+
+        String sql = "INSERT INTO sales (Date, Region, Product, Qty, Cost, Amount, Tax, Total) VALUES(?,?, ?, ?, ?, ?, ?, ?)";
+
+        try (Connection con = DriverManager.getConnection(url, user, password);
+        ) {
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1,  message.date);
+            pst.setString(2,message.Region);
+            pst.setString(3,message.Product);
+            pst.setInt(4,message.Qty);
+            pst.setDouble(5,message.Cost);
+            pst.setDouble(6,message.Amount);
+            pst.setDouble(7,message.Tax);
+            pst.setDouble(8,message.Total);
+
+            pst.executeUpdate();
+            pst.close();
+
+        } catch (SQLException ex) {
+
+            Logger lgr = Logger.getLogger(JdbcInsert.class.getName());
+            lgr.log(Level.SEVERE, ex.getMessage(), ex);
+        }
+    }
 }

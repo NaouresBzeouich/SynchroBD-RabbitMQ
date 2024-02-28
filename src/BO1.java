@@ -1,5 +1,10 @@
-public class BO1 extends BO {
-    public static void main(String args[]) throws Exception {
-        send s = new send("BO1");
+import javax.swing.*;
+
+public class BO1  {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            BO bo = new BO("BO1");
+            bo.setVisible(true);
+        });
     }
 }

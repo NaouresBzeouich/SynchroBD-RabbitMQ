@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ae1788-48fc-49cd-9f0a-0493b8bff9ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BO1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BO2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BOSend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Receive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/send.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JdbcDelete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Synchronisation-des-bases-de-donnees-avec-RabbitMQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Synchronisation-des-bases-de-donnees-avec-RabbitMQ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JdbcPreparedTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JdbcInsert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JdbcRetrieve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JdbcRetrieve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BO1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BO2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JdbcInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JdbcInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +40,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/R I B/Downloads/projet1/projet1",
+    "last_opened_file_path": "C:/Users/R I B/Desktop/tps/tp app repartie/Synchronisation-des-bases-de-donnees-avec-RabbitMQ",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
+    ]
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
