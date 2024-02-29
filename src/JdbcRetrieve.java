@@ -13,7 +13,7 @@ public class JdbcRetrieve {
 
         String url = "jdbc:mysql://localhost:3306/product_sales_"+BO;
         String user = "root";
-        String password = "98821616Oo";
+        String password = "root";
         String query = "SELECT * FROM sales";
         Vector<data> d = new Vector<data>(1);
 

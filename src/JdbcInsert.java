@@ -39,7 +39,7 @@ public class JdbcInsert {
 
         String url = "jdbc:mysql://localhost:3306/product_sales_"+DB;
         String user = "root";
-        String password = "98821616Oo";
+        String password = "root";
 
         String sql = "INSERT INTO sales (Date, Region, Product, Qty, Cost, Amount, Tax, Total) VALUES(?,?, ?, ?, ?, ?, ?, ?)";
 
