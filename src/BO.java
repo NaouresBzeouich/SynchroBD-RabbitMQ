@@ -18,7 +18,11 @@ public class BO extends JFrame {
     JLabel[] labels = new JLabel[8];
     JTextField[] textFields = new JTextField[8];
 
-    Vector<data> d = new Vector<data>;
+    Vector<data> d =new Vector<data>(10);
+    Object[][] dd  ;
+    JdbcRetrieve R = new JdbcRetrieve();
+
+
 
     public BO(String  bo) {
         this.bo = bo ;
@@ -59,6 +63,21 @@ public class BO extends JFrame {
             formPanel.add(panel);
         }
 
+        // Table Panel
+        d = R.Retrieve(bo);
+        //System.out.println(d.toString());
+        dd = data.dataToTable( d );
+        JTable table = new JTable(dd, columnNames);
+        JScrollPane scrollPane = new JScrollPane(table);
+
+        JPanel btnPanel = new JPanel();
+        btnPanel.add(sendButton);
+        btnPanel.add(returnButton);
+
+        tablePanel.add(btnPanel, BorderLayout.NORTH); // Buttons at the top
+        tablePanel.add(scrollPane, BorderLayout.CENTER); // Table at the center
+
+
         JPanel formbuttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         formbuttonPanel.add(rtnButton);
         formbuttonPanel.add(validateButton);
@@ -70,16 +89,6 @@ public class BO extends JFrame {
         formButton.setPreferredSize(new Dimension(200, 50)); // Consistent size
         tableButton.setPreferredSize(formButton.getPreferredSize()); // Same size for both buttons
 
-        // Table Panel
-        Object[][] dd = new Object[8][10];
-        JTable table = new JTable(dd, columnNames);
-        JScrollPane scrollPane = new JScrollPane(table);
-
-        JPanel btnPanel = new JPanel();
-        btnPanel.add(sendButton);
-        btnPanel.add(returnButton);
-        tablePanel.add(btnPanel, BorderLayout.NORTH); // Buttons at the top
-        tablePanel.add(scrollPane, BorderLayout.CENTER); // Table at the center
 
         // Add panels to the frame
         add(homePanel, "home");
@@ -91,7 +100,22 @@ public class BO extends JFrame {
         rtnButton.addActionListener(e -> cardLayout.show(getContentPane(), "home"));
         returnButton.addActionListener(e -> cardLayout.show(getContentPane(), "home"));
         tableButton.addActionListener(e -> {
+            tablePanel.removeAll();
+            d = R.Retrieve(bo);
+            dd = data.dataToTable( d );
 
+            JTable table1 = new JTable(dd, columnNames);
+            JScrollPane scrollPane1 = new JScrollPane(table1);
+
+            JPanel btnPanel1 = new JPanel();
+            btnPanel1.add(sendButton);
+            btnPanel1.add(returnButton);
+
+            tablePanel.add(btnPanel1, BorderLayout.NORTH); // Buttons at the top
+            tablePanel.add(scrollPane1, BorderLayout.CENTER); // Table at the center
+
+            tablePanel.revalidate();
+            tablePanel.repaint();
             cardLayout.show(getContentPane(), "table");
         });
 
@@ -128,10 +152,10 @@ public class BO extends JFrame {
                 send s = new send(bo);
                 JdbcDelete d = new JdbcDelete();
                 d.deleteSales(bo);
-
             } catch (Exception ex) {
                 throw new RuntimeException(ex);
             }
+            cardLayout.show(getContentPane(), "home");
         });
 
     }

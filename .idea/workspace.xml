@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ae1788-48fc-49cd-9f0a-0493b8bff9ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/JdbcDelete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BO1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BO2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BO2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JdbcInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JdbcInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BOSend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/R I B/Desktop/tps/tp app repartie/Synchronisation-des-bases-de-donnees-avec-RabbitMQ",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -73,5 +73,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

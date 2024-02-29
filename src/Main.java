@@ -1,21 +1,27 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import com. rabbitmq. client. ConnectionFactory;
+import com. rabbitmq.client.Connection;
+import com. rabbitmq. client.Channel;
+
+import java.util.Vector;
 
 public class Main {
-    public static void main(String[] args) {
-        Main p = new Main();
-        p.DBConnexion();
-        System.out.println("Hello world!");
+    public static String QUEUE_NAME ;
+
+    public static void   main(String BO[]) throws Exception {
+        QUEUE_NAME = "BO1";
+        ConnectionFactory factory = new ConnectionFactory();
+        factory.setHost("localhost");
+        try (Connection connection = factory.newConnection();
+             Channel channel = connection.createChannel()) {
+            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+            JdbcRetrieve R = new JdbcRetrieve();
+            Vector<data> d = R.Retrieve(QUEUE_NAME);
+            String msg ;
+            for(data dt : d){
+                msg = dt.toString();
+                channel.basicPublish("", QUEUE_NAME, null, msg.getBytes());
+            }
+        }
     }
 
-    void DBConnexion(){
-        try{
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/product_sales","root","98821616Oo");
-            System.out.println("connexion succes !");
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        ;
-    }
 }

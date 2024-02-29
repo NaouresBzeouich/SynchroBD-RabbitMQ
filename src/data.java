@@ -11,7 +11,7 @@ public class data {
     public Double Amount;
     public Double Tax;
     public Double Total;
-    public data( String Ddte,String  Region, String  Product, int Qty, Double Cost, Double Amount, Double Tax, Double Total){
+    public data( String date,String  Region, String  Product, int Qty, Double Cost, Double Amount, Double Tax, Double Total){
         this.date = date;
         this.Region = Region;
         this.Product = Product;
@@ -48,7 +48,18 @@ public class data {
     }
 
     public static Object[][] dataToTable(Vector<data> d){
-        Object[][] D = new Object[8][d.size()] ;
+        Object[][] D = new Object[d.size()+1][8] ;
+        for(int i=0; i<d.size() ; i++){
+            data dt = d.get(i);
+            D[i][0] = dt.date ;
+            D[i][1] = dt.Region ;
+            D[i][2] = dt.Product ;
+            D[i][3] = dt.Qty ;
+            D[i][4] = dt.Cost ;
+            D[i][5] = dt.Amount ;
+            D[i][6] = dt.Tax ;
+            D[i][7] = dt.Total ;
+        }
         return D;
 
     }
